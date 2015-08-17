@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(cpptoml)
+project(candela)
 
 include(CheckCXXCompilerFlag)
 include(CheckCXXSourceCompiles)
@@ -47,7 +47,7 @@ if(UNIX OR MINGW)
 
         if(NOT STDOPT)
             message(FATAL_ERROR
-                    "cpptoml requires a compiler with at least C++0x support")
+                    "candela requires a compiler with at least C++0x support")
         endif()
 
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${STDOPT}")
